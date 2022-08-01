@@ -1,0 +1,208 @@
+html{
+    --lienArticle : #007bff;
+    --lienArticleSurvol :#0056b3;
+    --fondHeader : #f9f9f9;
+    --bordureArticle : #eaeaea;
+    --work : #0766F0;
+    --team : #DC5E53;
+    --news : #98DC62;
+}
+
+body {
+    font-family: sans-serif;
+    width: 100vw;
+    display: flex;
+    font-size: 1rem;
+}
+
+.presentation, .footer{
+    text-shadow: 0 0 0.2rem black;
+
+}
+
+
+/* HEADER */
+.header {
+    width: 50%;
+    background-size: cover;
+    background-repeat : no-repeat;
+    background-image: url(images/nicole.jpg);
+    background-position: center;
+    position: relative;
+    color: white;
+    min-width: 530px;
+}
+
+.title{
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    display: flex;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bold;
+    width: 10rem;
+}
+
+.logo{
+    width: 2.2rem;
+    align-self: flex-start;
+}
+
+h1 {
+    padding-left: 1.5rem;
+}
+
+/* PRESENTATION */
+
+.presentation{
+    position: absolute;
+    top: 44%;
+    left: 5%;
+    right: 5%;
+    text-align: right;
+    background-color: #f9f9f930;
+    display: flex;
+    flex-direction: column;
+    padding-right: 1.5rem;
+    padding-left: 8rem;
+    padding-bottom: 1.6rem;
+
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1.6rem 0;
+}
+
+.italic{
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+    padding-left: 0.7rem;
+}
+
+.presentation p{
+    line-height: 1.5rem;
+}
+
+/* MAIN */
+.main {
+    width: 50%;
+    background-color: var(--fondHeader);
+    height: 100vh;
+}
+
+.titleArticle {
+    
+    padding: 2rem 2rem;
+    margin: 0;
+}
+
+.allArticles{
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100vh - 6rem);
+    overflow-y: scroll;
+}
+
+.news{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: var(--bordureArticle) solid 1px;
+    background-color: white;
+    padding: 2rem;
+    position: relative;
+    row-gap: 1.5rem;
+    min-width: 300px;
+}
+
+.hashtag {
+    position: absolute;
+    border-radius: 5px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.hnews {
+    background-color: var(--news);
+}
+
+.team {
+    background-color: var(--team);
+}
+
+.work {
+    background-color: var(--work);
+}
+
+h3 {
+    margin-top: 3.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.auteur {
+    display: flex;
+    height: 2rem;
+    font-size: 0.8rem;
+    align-items: center;
+}
+
+img {
+    height: 100%;
+}
+
+.author {
+    font-weight: bold;
+    padding-right: 0.2rem;
+    padding-left: 1rem;
+}
+
+.date {
+    color: grey;
+}
+
+.description {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.continue {
+    color: var(--lienArticle);
+    font-weight: bold;
+    transition: 1s;
+}
+
+.continue:hover {
+    color: var(--lienArticleSurvol);
+}
+/* FOOTER */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    min-width: 530px;
+
+}
+
+.footer ul{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 2.5rem;
+    margin: 1rem 2rem;
+}
+
+.links{
+    text-decoration: none;
+}
+
+/* VOIR BARRE DE SCROLL QUI APPARAIT */
